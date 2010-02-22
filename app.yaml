@@ -1,0 +1,10 @@
+application: uncle-milty
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: uncle-milty.py
+- url: /assets
+  static_dir: assets
